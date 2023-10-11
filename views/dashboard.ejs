@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Administración</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard de Administración</h1>
+    </header>
+
+    <main>
+      
+        <h2>Agregar Producto</h2>
+        <form action="/dashboard/add-product" method="POST">
+            <label for="productName">Nombre del Producto:</label>
+            <input type="text" id="productName" name="productName" required>
+            <br>
+            <label for="productPrice">Precio:</label>
+            <input type="number" id="productPrice" name="productPrice" required>
+            <br>
+            <label for="productCategory">Categoría:</label>
+            <input type="text" id="productCategory" name="productCategory" required>
+            <br>
+            <label for="productStock">Stock:</label>
+            <input type="number" id="productStock" name="productStock" required>
+            <br>
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+</body>
+
+</html>
