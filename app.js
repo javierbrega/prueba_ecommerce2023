@@ -29,3 +29,9 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Servidor en ejecución en el puerto ${port}`);
 });
+
+// En tu archivo app.js
+app.get('/registro', (req, res) => {
+  res.render('registro'); // Renderiza la vista registro.ejs
+});
+
